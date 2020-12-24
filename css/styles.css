@@ -1,0 +1,354 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #000;
+}
+
+.wrapper {
+  width: 1570px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* =====HEADER====== */
+
+.header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.main_menu a {
+  color: #fcf9f9;
+  font-family: "Condensed";
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.glow:hover,
+.glow:focus {
+  text-shadow: 0 0 20px rgba(92, 42, 218, 0.81),
+    0 0 30px rgba(92, 42, 218, 0.81), 0 0 40px rgba(92, 42, 218, 0.81),
+    0 0 50px rgba(92, 42, 218, 0.81), 0 0 60px rgba(92, 42, 218, 0.81);
+}
+
+.glow-logo:hover,
+.glow-logo:focus {
+  -webkit-filter: drop-shadow(0px 0px 20px rgba(92, 42, 218, 0.7));
+  filter: drop-shadow(0px 0px 20px rgba(92, 42, 218, 0.7));
+}
+
+/* =======HERO=======*/
+
+/* ======BANNER======*/
+
+.announcement-container {
+  margin-top: 30px;
+  border-radius: 30px;
+  border: 6px solid #ece0e0;
+  background-color: #440c46;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.announcement span {
+  color: #fcf9f9;
+  font-family: "Phosphor";
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
+
+.announcement h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #fcf9f9;
+  font-family: "Copperplate";
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.2em;
+}
+
+.announcement p {
+  color: #fcf9f9;
+  font-family: "Condensed";
+  font-size: 36px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.01em;
+}
+
+/* ===ENTERTAINMENT==*/
+
+.entertaining_content_text {
+  padding-left: 35px;
+}
+
+.entertaining_content {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.entertaining_content .col-6 {
+  width: 50%;
+}
+
+.entertaining_content h2 {
+  text-align: center;
+  color: #fcf9f9;
+  font-family: "Copperplate";
+  font-size: 42px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+.entertaining_content span {
+  color: #07a948;
+  font-family: "SignPainter";
+  font-size: 102px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.entertaining_content p {
+  text-align: justify;
+  color: #fcf9f9;
+  font-family: "Condensed";
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+}
+
+/* ====PLACE&TIME====*/
+.place_and_time {
+  margin-top: 40px;
+}
+
+.place_and_time .col-4 {
+  width: 40%;
+}
+
+.place-and-time-list-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.place-and-time-container {
+  display: flex;
+  align-items: center;
+  padding-left: 130px;
+  padding-right: 120px;
+}
+.place_and_time h2 {
+  text-align: center;
+  color: #bb31c0;
+  font-family: Copperplate;
+  font-size: 72px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.place_and_time li::before {
+  content: "\2022";
+  color: #bb31c0;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.place_and_time li {
+  color: #b5b3b1;
+  font-family: Copperplate;
+  font-size: 29px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.9;
+  letter-spacing: 0.05em;
+}
+
+/* =====PARTNERS=====*/
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.partners-list .col-2 {
+  width: calc(100% / 3);
+}
+
+.partners-logo {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.partners {
+  margin-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.partners h2 {
+  margin-bottom: 30px;
+  text-transform: lowercase;
+  text-align: center;
+  color: #fcf8f6;
+  font-family: Copperplate;
+  font-size: 80px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15em;
+  line-height: 0.7;
+}
+/* =====GALLERY======*/
+
+.media_gallery {
+  margin-top: 50px;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  margin-right: 20px;
+}
+
+.tablinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  border-radius: 25px;
+  border: 6px solid #fbf6f6;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tabcontent {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  border: 6px solid #ece0e0;
+  padding: 40px;
+}
+
+.media_gallery button {
+  color: #fbf6f6;
+  font-family: Copperplate;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15em;
+}
+
+.tab-image {
+  width: 260px;
+  height: 170px;
+}
+
+/* ======FOOTER======*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  box-shadow: 0 0 43px 14px rgba(92, 42, 218, 0.61);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-image: url(../img/dark-metal-grid-8.jpg);
+  padding-right: 130px;
+  padding-left: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  letter-spacing: 0.4em;
+}
+
+.footer-social-list-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer-social-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer_left h3 {
+  color: #fbf6f6;
+  font-family: Copperplate;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-mail {
+  color: #b5b3b1;
+  font-family: Copperplate;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-fast-link {
+  margin-top: 25px;
+  color: #adaba9;
+  font-family: Copperplate;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-fast-items {
+  margin-top: 20px;
+}

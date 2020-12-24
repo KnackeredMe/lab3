@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Copperplate";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/CopperplateBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/CondensedBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Phosphor";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/phosphor_cg-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SignPainter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/signpainter-housescript-webfont.woff") format("woff");
+}
