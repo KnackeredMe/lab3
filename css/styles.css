@@ -6,6 +6,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  color: #fcf8f6;
+}
+
 h1,
 h2,
 h3,
