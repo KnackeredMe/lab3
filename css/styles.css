@@ -41,10 +41,9 @@ body {
 
 /* =====HEADER====== */
 
-.header ul {
+.main-menu-item {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -52,7 +51,7 @@ body {
   max-height: 170px;
 }
 
-.main_menu a {
+.main-menu-link {
   color: #fcf9f9;
   font-family: "Condensed";
   font-size: 40px;
@@ -130,10 +129,6 @@ body {
   margin-top: 100px;
 }
 
-.entertaining-content .col-6 {
-  width: 50%;
-}
-
 .entertaining-content-heading {
   text-align: center;
   color: #fcf9f9;
@@ -168,17 +163,18 @@ body {
   margin-top: 40px;
 }
 
-.place-and-time .col-4 {
-  width: 40%;
-}
-
-.place-and-time-list-item:not(:last-child) {
+/* .place-and-time-list-item:not(:last-child) {
   margin-bottom: 25px;
+} */
+
+.place-and-time-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 310px;
 }
 
 .place-and-time-container {
-  display: flex;
-  align-items: center;
   padding-left: 130px;
   padding-right: 120px;
 }
@@ -203,36 +199,29 @@ body {
 .place-and-time-list-item {
   color: #b5b3b1;
   font-family: Copperplate;
-  font-size: 29px;
+  font-size: 25px;
   font-weight: 400;
   font-style: normal;
-  line-height: 0.9;
+  line-height: 0.8;
   letter-spacing: 0.05em;
 }
 
 /* =====PARTNERS=====*/
 
-.partners-list {
+/* .partners-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-}
-
-.partners-list .col-2 {
-  width: calc(100% / 3);
-}
+} */
 
 .partners-logo {
-  max-width: 300px;
   margin: 0 auto;
 }
 
 .partners {
   margin-top: 50px;
-  padding-left: 200px;
-  padding-right: 200px;
 }
 
 .partners-heading {
@@ -251,15 +240,6 @@ body {
 
 .media-gallery {
   margin-top: 50px;
-}
-
-.tab {
-  display: flex;
-  align-items: center;
-}
-
-.badge {
-  margin-right: 20px;
 }
 
 .tablinks {
@@ -283,10 +263,10 @@ body {
 
 .tabcontent {
   margin-top: 5px;
-  display: flex;
-  align-items: center;
-  border: 6px solid #ece0e0;
-  padding: 40px;
+  border: 5px solid #ece0e0;
+  padding: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .tab-image {
@@ -297,19 +277,14 @@ body {
 /* ======FOOTER======*/
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 30px;
   box-shadow: 0 0 43px 14px rgba(92, 42, 218, 0.61);
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   background-image: url(../img/dark-metal-grid-8.jpg);
-  padding-right: 130px;
-  padding-left: 130px;
   padding-top: 50px;
   padding-bottom: 50px;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.2em;
 }
 
 .footer-social-list-link:not(:last-child) {
