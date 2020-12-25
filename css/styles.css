@@ -88,7 +88,7 @@ body {
   padding-right: 130px;
 }
 
-.announcement span {
+.announcement-heading-span {
   color: #fcf9f9;
   font-family: "Phosphor";
   font-size: 48px;
@@ -97,7 +97,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-.announcement h2 {
+.announcement-heading {
   text-align: center;
   margin-bottom: 25px;
   color: #fcf9f9;
@@ -109,7 +109,7 @@ body {
   letter-spacing: 0.2em;
 }
 
-.announcement p {
+.announcement-text {
   color: #fcf9f9;
   font-family: "Condensed";
   font-size: 36px;
@@ -120,21 +120,21 @@ body {
 
 /* ===ENTERTAINMENT==*/
 
-.entertaining_content_text {
+.entertaining-content-container {
   padding-left: 35px;
 }
 
-.entertaining_content {
+.entertaining-content {
   display: flex;
   align-items: center;
   margin-top: 100px;
 }
 
-.entertaining_content .col-6 {
+.entertaining-content .col-6 {
   width: 50%;
 }
 
-.entertaining_content h2 {
+.entertaining-content-heading {
   text-align: center;
   color: #fcf9f9;
   font-family: "Copperplate";
@@ -145,7 +145,7 @@ body {
   line-height: 1;
 }
 
-.entertaining_content span {
+.entertaining-content-span {
   color: #07a948;
   font-family: "SignPainter";
   font-size: 102px;
@@ -153,7 +153,7 @@ body {
   font-style: normal;
 }
 
-.entertaining_content p {
+.entertaining-content-text {
   text-align: justify;
   color: #fcf9f9;
   font-family: "Condensed";
@@ -164,11 +164,11 @@ body {
 }
 
 /* ====PLACE&TIME====*/
-.place_and_time {
+.place-and-time {
   margin-top: 40px;
 }
 
-.place_and_time .col-4 {
+.place-and-time .col-4 {
   width: 40%;
 }
 
@@ -182,7 +182,7 @@ body {
   padding-left: 130px;
   padding-right: 120px;
 }
-.place_and_time h2 {
+.place-and-time-heading {
   text-align: center;
   color: #bb31c0;
   font-family: Copperplate;
@@ -191,7 +191,7 @@ body {
   font-style: normal;
 }
 
-.place_and_time li::before {
+.place-and-time-list-item::before {
   content: "\2022";
   color: #bb31c0;
   font-weight: bold;
@@ -200,7 +200,7 @@ body {
   margin-left: -1em;
 }
 
-.place_and_time li {
+.place-and-time-list-item {
   color: #b5b3b1;
   font-family: Copperplate;
   font-size: 29px;
@@ -235,7 +235,7 @@ body {
   padding-right: 200px;
 }
 
-.partners h2 {
+.partners-heading {
   margin-bottom: 30px;
   text-transform: lowercase;
   text-align: center;
@@ -249,7 +249,7 @@ body {
 }
 /* =====GALLERY======*/
 
-.media_gallery {
+.media-gallery {
   margin-top: 50px;
 }
 
@@ -272,6 +272,13 @@ body {
   border: 6px solid #fbf6f6;
   background-color: transparent;
   cursor: pointer;
+
+  color: #fbf6f6;
+  font-family: Copperplate;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.15em;
 }
 
 .tabcontent {
@@ -280,15 +287,6 @@ body {
   align-items: center;
   border: 6px solid #ece0e0;
   padding: 40px;
-}
-
-.media_gallery button {
-  color: #fbf6f6;
-  font-family: Copperplate;
-  font-size: 48px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.15em;
 }
 
 .tab-image {
@@ -324,7 +322,7 @@ body {
   align-items: center;
 }
 
-.footer_left h3 {
+.footer-fast-heading {
   color: #fbf6f6;
   font-family: Copperplate;
   font-size: 30px;
