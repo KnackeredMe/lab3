@@ -229,11 +229,11 @@ body {
 
 .partners-heading {
   margin-bottom: 23px;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-align: center;
   color: #fcf8f6;
   font-family: Copperplate;
-  font-size: 60px;
+  font-size: 54px;
   font-weight: 400;
   font-style: normal;
 
@@ -344,8 +344,59 @@ body {
   height: 30px;
 }
 
+/* =======SM-MENU====== */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 11, 11, 0.4);
+}
+.sm-menu {
+  width: 60%;
+  height: 50%;
+  background-color: #000000;
+  position: absolute;
+  border: 5px solid #fbf6f6;
+}
+
+.close-menu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #000000;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bb31c0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+}
+
+.open-menu {
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  background-color: #000000;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bb31c0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 /* ===MEDIAREQUESTS=== */
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     width: 320px;
     margin: 0 auto;
@@ -357,6 +408,7 @@ body {
     height: 1px;
     margin: -1px;
   }
+
   /* ===HEADER=== */
 
   .logo {
@@ -381,7 +433,7 @@ body {
   }
 
   .announcement-heading {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .announcement-heading-span {
@@ -389,7 +441,8 @@ body {
   }
 
   .announcement-text {
-    font-size: 15px;
+    text-align: justify;
+    font-size: 10px;
   }
 
   /* ===ENTERTAINMENT==*/
@@ -413,6 +466,7 @@ body {
 
   .entertaining-content-heading {
     font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .entertaining-content-span {
@@ -427,8 +481,19 @@ body {
     padding: 20px;
   }
   /* ===PLACE&TIME=== */
+
+  .place-and-time-list {
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
+  .place-and-time {
+    margin-top: 0px;
+  }
+
   .place-and-time-heading {
     font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .place-and-time-container {
@@ -440,6 +505,10 @@ body {
   }
 
   /* ======PARTNERS====== */
+
+  .partners-logo {
+    max-height: 70px;
+  }
 
   .partners-list {
     margin: 0px;
@@ -469,27 +538,75 @@ body {
     height: 30px;
   }
 
+  .tab-image {
+    object-fit: cover;
+  }
+
   /* ======FOOTER======*/
 
   .footer-mail {
-    font-size: 5px;
-    width: 30%;
+    font-size: 7px;
   }
 
   .footer {
-    margin: 0px;
+    align-content: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 40px;
     box-shadow: 0 0 30px 10px rgba(92, 42, 218, 0.61);
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     background-image: url(../img/dark-metal-grid-8.jpg);
-    padding-top: 0px;
+    letter-spacing: 0.1em;
+    line-height: 0.9;
+  }
+
+  .footer-fast-items {
+    margin-top: 0px;
+  }
+
+  .footer-fast-list {
+    margin-top: 5px;
+  }
+
+  .footer-fast-heading {
+    font-size: 10px;
+  }
+
+  .footer-fast-link {
+    font-size: 7px;
+  }
+
+  .footer-social-list-image {
+    height: 15px;
+  }
+
+  /* ====MENU===== */
+
+  .sm-menu-list {
+    padding-top: 30px;
+  }
+  .menu-text-container {
+    font-size: 15px;
+    letter-spacing: 0.1em;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   .wrapper {
-    width: 600px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
+  }
+
+  .lg-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 }
 
@@ -499,5 +616,13 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+  }
+
+  .lg-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
   }
 }
