@@ -6,9 +6,9 @@ a {
   text-decoration: none;
 }
 
-/* * {
+* {
   outline: 1px solid red;
-} */
+}
 
 a:hover,
 a:focus {
@@ -78,17 +78,11 @@ body {
 
 /* =======HERO=======*/
 
-/* .hero {
-  background-image: url(../img/banner.png);
-} */
-
-.hero-title {
-  color: #fcf9f9;
-  font-family: "Phosphor";
-  font-size: 30px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.1em;
+.hero {
+  background-image: url(../img/banner2.png);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
 }
 
 /* ======BANNER======*/
@@ -352,6 +346,10 @@ body {
 
 /* ===MEDIAREQUESTS=== */
 @media screen and (max-width: 599px) {
+  body {
+    max-width: 100%;
+  }
+
   .wrapper {
     width: 320px;
     margin: 0 auto;
@@ -368,6 +366,14 @@ body {
   .logo {
     max-width: 70px;
     max-height: 70px;
+  }
+
+  /* ===HERO=== */
+  .hero {
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
   }
 
   /* ===ANNOUNCEMENT=== */
